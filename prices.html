@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>senor — Prices</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/icons/favicon-16x16.png">
+    <link rel="manifest" href="images/icons/site.webmanifest">
+</head>
+<body>
+    <!-- ── HEADER ─────────────────────────────────────── -->
+    <header class="header">
+    <div class="header-inner">
+        <span class="logo">senor<span class="logo-dot">.</span></span>
+        <nav>
+        <a href="product.html" class="nl">Product</a>
+        <a href="prices.html"  class="nl on">Prices</a>
+        <a href="docs.html" class="nl">Docs</a>
+        </nav>
+        <button class="btn-try">Try Senor</button>
+    </div>
+    </header>
+
+    <main>
+
+    <!-- ── PAGE HERO ──────────────────────────────────── -->
+    <div class="prices-hero">
+    <div>
+        <p class="sec-eye">pricing</p>
+        <h1>Simple pricing.<br>No surprises.</h1>
+    </div>
+    <div class="prices-hero-right">
+        <p class="prices-hero-desc">All plans include full REST and streaming API access. No seat fees, no metered surprises, no vendor lock-in.</p>
+        <p class="prices-hero-note"><i class="ti ti-circle-check"></i> Free plan available — no credit card required</p>
+    </div>
+    </div>
+
+    <!-- ── PRICING CARDS ──────────────────────────────── -->
+    <div class="section" style="padding-top:0">
+    <div class="pricing-grid">
+
+        <div class="plan">
+        <p class="plan-name">Free</p>
+        <p class="plan-price">$0<span> /mo</span></p>
+        <p class="plan-tagline">For individuals getting started.</p>
+        <ul class="plan-list">
+            <li><i class="ti ti-minus"></i>100 requests / day</li>
+            <li><i class="ti ti-minus"></i>4k context window</li>
+            <li><i class="ti ti-minus"></i>REST API access</li>
+            <li><i class="ti ti-minus"></i>CLI access</li>
+            <li><i class="ti ti-minus"></i>Community support</li>
+        </ul>
+        <button class="btn-plan btn-line">Get started</button>
+        </div>
+
+        <div class="plan plan-featured">
+        <p class="plan-badge">Most popular</p>
+        <p class="plan-name">Pro</p>
+        <p class="plan-price">$12<span> /mo</span></p>
+        <p class="plan-tagline">For developers who need more.</p>
+        <ul class="plan-list">
+            <li><i class="ti ti-minus"></i>Unlimited requests</li>
+            <li><i class="ti ti-minus"></i>128k context window</li>
+            <li><i class="ti ti-minus"></i>Streaming + webhooks</li>
+            <li><i class="ti ti-minus"></i>Analytics dashboard</li>
+            <li><i class="ti ti-minus"></i>Priority support</li>
+        </ul>
+        <button class="btn-plan btn-fill">Get Pro</button>
+        </div>
+
+        <div class="plan">
+        <p class="plan-name">Team</p>
+        <p class="plan-price">$49<span> /mo</span></p>
+        <p class="plan-tagline">For teams building at scale.</p>
+        <ul class="plan-list">
+            <li><i class="ti ti-minus"></i>Up to 20 seats</li>
+            <li><i class="ti ti-minus"></i>128k context window</li>
+            <li><i class="ti ti-minus"></i>Audit logs + SSO</li>
+            <li><i class="ti ti-minus"></i>Custom system prompt</li>
+            <li><i class="ti ti-minus"></i>Dedicated support</li>
+        </ul>
+        <button class="btn-plan btn-line">Contact us</button>
+        </div>
+
+    </div>
+    </div>
+
+    <!-- ── COMPARISON TABLE ────────────────────────────── -->
+    <hr class="divider">
+    <div class="section">
+    <p class="sec-eye">compare plans</p>
+    <h2 class="sec-title">What's included.</h2>
+    <div class="comp-wrap">
+        <table class="comp-table">
+        <thead>
+            <tr>
+            <th style="width:40%">Feature</th>
+            <th>Free</th>
+            <th class="col-feat">Pro</th>
+            <th>Team</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="cat-row"><td colspan="4">Usage</td></tr>
+            <tr>
+            <td>API requests</td>
+            <td>100 / day</td>
+            <td class="col-feat tval">Unlimited</td>
+            <td class="tval">Unlimited</td>
+            </tr>
+            <tr>
+            <td>Context window</td>
+            <td>4k tokens</td>
+            <td class="col-feat tval">128k tokens</td>
+            <td class="tval">128k tokens</td>
+            </tr>
+            <tr>
+            <td>Rate limit</td>
+            <td>10 req/min</td>
+            <td class="col-feat tval">300 req/min</td>
+            <td class="tval">1000 req/min</td>
+            </tr>
+
+            <tr class="cat-row"><td colspan="4">API & integrations</td></tr>
+            <tr>
+            <td>REST API</td>
+            <td><i class="ti ti-check check"></i></td>
+            <td class="col-feat"><i class="ti ti-check check"></i></td>
+            <td><i class="ti ti-check check"></i></td>
+            </tr>
+            <tr>
+            <td>CLI access</td>
+            <td><i class="ti ti-check check"></i></td>
+            <td class="col-feat"><i class="ti ti-check check"></i></td>
+            <td><i class="ti ti-check check"></i></td>
+            </tr>
+            <tr>
+            <td>Streaming</td>
+            <td><i class="ti ti-minus cross"></i></td>
+            <td class="col-feat"><i class="ti ti-check check"></i></td>
+            <td><i class="ti ti-check check"></i></td>
+            </tr>
+            <tr>
+            <td>Webhooks</td>
+            <td><i class="ti ti-minus cross"></i></td>
+            <td class="col-feat"><i class="ti ti-check check"></i></td>
+            <td><i class="ti ti-check check"></i></td>
+            </tr>
+            <tr>
+            <td>Custom system prompt</td>
+            <td><i class="ti ti-minus cross"></i></td>
+            <td class="col-feat"><i class="ti ti-check check"></i></td>
+            <td><i class="ti ti-check check"></i></td>
+            </tr>
+
+            <tr class="cat-row"><td colspan="4">Observability</td></tr>
+            <tr>
+            <td>Analytics dashboard</td>
+            <td><i class="ti ti-minus cross"></i></td>
+            <td class="col-feat"><i class="ti ti-check check"></i></td>
+            <td><i class="ti ti-check check"></i></td>
+            </tr>
+            <tr>
+            <td>Request logs (30 days)</td>
+            <td><i class="ti ti-minus cross"></i></td>
+            <td class="col-feat"><i class="ti ti-check check"></i></td>
+            <td><i class="ti ti-check check"></i></td>
+            </tr>
+            <tr>
+            <td>Audit logs</td>
+            <td><i class="ti ti-minus cross"></i></td>
+            <td class="col-feat"><i class="ti ti-minus cross"></i></td>
+            <td><i class="ti ti-check check"></i></td>
+            </tr>
+
+            <tr class="cat-row"><td colspan="4">Security & admin</td></tr>
+            <tr>
+            <td>SSO / SAML</td>
+            <td><i class="ti ti-minus cross"></i></td>
+            <td class="col-feat"><i class="ti ti-minus cross"></i></td>
+            <td><i class="ti ti-check check"></i></td>
+            </tr>
+            <tr>
+            <td>Team seats</td>
+            <td>1</td>
+            <td class="col-feat">1</td>
+            <td class="tval">Up to 20</td>
+            </tr>
+            <tr>
+            <td>Self-host option</td>
+            <td><i class="ti ti-minus cross"></i></td>
+            <td class="col-feat"><i class="ti ti-minus cross"></i></td>
+            <td><i class="ti ti-check check"></i></td>
+            </tr>
+
+            <tr class="cat-row"><td colspan="4">Support</td></tr>
+            <tr>
+            <td>Community support</td>
+            <td><i class="ti ti-check check"></i></td>
+            <td class="col-feat"><i class="ti ti-check check"></i></td>
+            <td><i class="ti ti-check check"></i></td>
+            </tr>
+            <tr>
+            <td>Priority support</td>
+            <td><i class="ti ti-minus cross"></i></td>
+            <td class="col-feat"><i class="ti ti-check check"></i></td>
+            <td><i class="ti ti-check check"></i></td>
+            </tr>
+            <tr>
+            <td>Dedicated support</td>
+            <td><i class="ti ti-minus cross"></i></td>
+            <td class="col-feat"><i class="ti ti-minus cross"></i></td>
+            <td><i class="ti ti-check check"></i></td>
+            </tr>
+        </tbody>
+        </table>
+    </div>
+    </div>
+
+    <!-- ── FAQ ────────────────────────────────────────── -->
+    <hr class="divider">
+    <div class="section">
+    <p class="sec-eye">faq</p>
+    <h2 class="sec-title">Common questions.</h2>
+    <div class="faq-list">
+        <div class="faq-item">
+        <p class="faq-q">Can I upgrade or downgrade at any time?</p>
+        <p class="faq-a">Yes. Plan changes take effect immediately. If you downgrade mid-cycle, you keep the higher tier's limits until the period ends and aren't charged the difference.</p>
+        </div>
+        <div class="faq-item">
+        <p class="faq-q">What happens when I hit the free tier request limit?</p>
+        <p class="faq-a">Requests are paused until midnight UTC. You'll get a clear error response with a <code style="font-family:var(--mono);font-size:0.82em;color:var(--accent)">retry_after</code> header. No surprise charges, no silent failures.</p>
+        </div>
+        <div class="faq-item">
+        <p class="faq-q">Is there a free trial for Pro?</p>
+        <p class="faq-a">Yes — 14 days of Pro access, no credit card required. When the trial ends you're automatically moved to the Free plan unless you add a payment method.</p>
+        </div>
+        <div class="faq-item">
+        <p class="faq-q">Do you offer discounts for annual billing?</p>
+        <p class="faq-a">Yes. Annual plans are billed at 10 months instead of 12 — roughly a 17% discount. Switch anytime from your billing settings.</p>
+        </div>
+        <div class="faq-item">
+        <p class="faq-q">Is there an open-source or student discount?</p>
+        <p class="faq-a">Yes. We offer free Pro access for qualifying open-source maintainers and students. <a href="#">Apply here</a> with a link to your project or institution.</p>
+        </div>
+    </div>
+    </div>
+
+    <!-- ── BOTTOM CTA ─────────────────────────────────── -->
+    <hr class="divider">
+    <div class="cta-wrap">
+    <h2 class="cta-title">Start for free.</h2>
+    <p class="cta-sub">No credit card. No commitment. Upgrade when you need to.</p>
+    <button class="btn-cta-lg">Try Senor for free →</button>
+    </div>
+
+    </main>
+
+    <!-- ── FOOTER ─────────────────────────────────────── -->
+    <footer>
+    <div class="footer-inner">
+        <span class="logo">senor<span class="logo-dot">.</span></span>
+        <div class="footer-links">
+        <a href="product.html">Product</a>
+        <a href="prices.html">Prices</a>
+        <a href="docs.html">Docs</a>
+        <a href="https://github.com/MuhammadTak">GitHub</a>
+        <a href="">Status</a>
+        </div>
+        <p class="footer-cr">© 2025 senor</p>
+    </div>
+    </footer>
+</body>
+</html>

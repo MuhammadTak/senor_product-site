@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>senor — Product</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/icons/favicon-16x16.png">
+    <link rel="manifest" href="images/icons/site.webmanifest">
+</head>
+<body>
+    
+    <!-- ── HEADER ─────────────────────────────────────── -->
+    <header class="header">
+    <div class="header-inner">
+        <span class="logo">senor<span class="logo-dot">.</span></span>
+        <nav>
+        <a href="product.html" class="nl on">Product</a>
+        <a href="prices.html" class="nl">Prices</a>
+        <a href="docs.html" class="nl">Docs</a>
+        </nav>
+        <button class="btn-try">Try Senor</button>
+    </div>
+    </header>
+
+    <main>
+
+    <!-- ── HERO ───────────────────────────────────────── -->
+    <section class="hero">
+        <div>
+            <p class="eyebrow">v1.0 — now available</p>
+            <h1>Think without<br>the noise.</h1>
+            <p class="hero-desc">senor is a reasoning model built for developers who value precision. Pipe it, query it, build on it.</p>
+            <div class="hero-actions">
+            <button class="btn-primary">Get started</button>
+            <button class="btn-ghost"><a href="docs.html">View docs →</a></button>
+            </div>
+        </div>
+        <div>
+            <div class="terminal">
+            <div class="term-bar">
+                <span class="term-dot"></span><span class="term-dot"></span><span class="term-dot"></span>
+                <span class="term-label">senor — cli</span>
+            </div>
+            <div class="term-body">
+                <span class="tl"><span class="tc-p">›</span> <span class="tc-c">senor ask</span></span>
+                <span class="tl ind"><span class="tc-s">"Optimal sort for nearly-sorted data?"</span></span>
+                <span class="tl gap"></span>
+                <span class="tl"><span class="tc-d">● thinking</span></span>
+                <span class="tl gap"></span>
+                <span class="tl"><span class="tc-o">For nearly-sorted data, insertion sort</span></span>
+                <span class="tl"><span class="tc-o">achieves O(n) — outperforming quicksort's</span></span>
+                <span class="tl"><span class="tc-o">expected O(n log n) on random input.</span></span>
+                <span class="tl gap"></span>
+                <span class="tl"><span class="tc-d">↳ confident · 0.6s · 1 citation</span></span>
+                <span class="tl gap"></span>
+                <span class="tl"><span class="tc-p">›</span> <span class="tc-cur"></span></span>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── STATS BAR ───────────────────────────────────── -->
+    <div class="stats-bar">
+    <div class="stats-inner">
+        <div class="stat"><span class="stat-val">128k</span><span class="stat-lbl">context tokens</span></div>
+        <div class="stat"><span class="stat-val">&lt; 0.8s</span><span class="stat-lbl">avg. first token</span></div>
+        <div class="stat"><span class="stat-val">99.9%</span><span class="stat-lbl">uptime SLA</span></div>
+        <div class="stat"><span class="stat-val">REST + stream</span><span class="stat-lbl">API formats</span></div>
+    </div>
+    </div>
+
+    <!-- ── FEATURES ───────────────────────────────────── -->
+    <hr class="divider">
+    <div class="section">
+    <p class="sec-eye">what makes it different</p>
+    <div class="feats-grid">
+        <div class="feat">
+        <i class="ti ti-brain feat-icon"></i>
+        <p class="feat-name">Precision reasoning</p>
+        <p class="feat-desc">Chain-of-thought by default. Shows its work and hedges when uncertain — no hallucinated confidence.</p>
+        </div>
+        <div class="feat">
+        <i class="ti ti-file-text feat-icon"></i>
+        <p class="feat-name">128k context</p>
+        <p class="feat-desc">Feed it a codebase, document, or conversation. Holds the thread without losing detail.</p>
+        </div>
+        <div class="feat">
+        <i class="ti ti-terminal-2 feat-icon"></i>
+        <p class="feat-name">API-first design</p>
+        <p class="feat-desc">REST, streaming, and CLI out of the box. Integrate with any stack in minutes, not days.</p>
+        </div>
+        <div class="feat">
+        <i class="ti ti-shield-lock feat-icon"></i>
+        <p class="feat-name">No telemetry</p>
+        <p class="feat-desc">Your queries stay yours. No training on your data, no logging by default.</p>
+        </div>
+    </div>
+    </div>
+
+    <!-- ── HOW IT WORKS ────────────────────────────────── -->
+    <hr class="divider">
+    <div class="section">
+    <p class="sec-eye">how it works</p>
+    <h2 class="sec-title">Reason, then respond.</h2>
+    <div class="steps-grid">
+        <div class="step">
+        <span class="step-num">01 — Parse</span>
+        <p class="step-name">Understand first.</p>
+        <p class="step-desc">Before generating a single token, senor analyzes your prompt for intent, ambiguity, and scope. Vague inputs are flagged, not guessed.</p>
+        <div class="step-detail">
+            intent: <span>algorithmic comparison</span><br>
+            scope:  <span>single-answer, factual</span><br>
+            ambiguity: <span>none detected</span>
+        </div>
+        </div>
+        <div class="step">
+        <span class="step-num">02 — Reason</span>
+        <p class="step-name">Build privately.</p>
+        <p class="step-desc">A chain-of-thought runs internally before you see the response. Every step is available in verbose mode via the API for full auditability.</p>
+        <div class="step-detail">
+            step 1: <span>recall sort families</span><br>
+            step 2: <span>compare on nearly-sorted</span><br>
+            step 3: <span>verify with complexity bounds</span>
+        </div>
+        </div>
+        <div class="step">
+        <span class="step-num">03 — Respond</span>
+        <p class="step-name">Answer precisely.</p>
+        <p class="step-desc">You get a direct answer with a confidence level, relevant citations, and no filler. If senor isn't sure, it says so.</p>
+        <div class="step-detail">
+            confidence: <span>high</span><br>
+            citations:  <span>1 source</span><br>
+            response time: <span>0.6s</span>
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- ── PERSONALIZATION ─────────────────────────────── -->
+    <hr class="divider">
+    <div class="section">
+    <p class="sec-eye">privacy & personalization</p>
+    <div class="personal-wrap">
+
+        <div>
+        <h2 class="sec-title">Build your<br>own model.</h2>
+        <p class="personal-desc">Every time you use senor, it learns a bit more about how you work — your domain, your style, the kind of answers that actually help you. The more you use it, the better it gets at working with you specifically.</p>
+        <p class="personal-desc">That learning is entirely yours. Nothing you send to senor ever influences anyone else's model, and nobody else's usage can shape yours. You're not feeding a shared system — you're developing something personal.</p>
+        <p class="personal-desc">The foundation everyone starts from stays untouched. What grows over time is your layer on top of it, one that reflects exactly how you work.</p>
+        <div class="personal-note">
+            <strong>Want to pause the learning?</strong>
+            <p>You can turn it off anytime from your account settings. Your model keeps everything it's already learned about you — it just won't pick up anything new until you re-enable it. Nothing is lost, nothing resets. It simply stops growing.</p>
+        </div>
+        </div>
+
+        <div>
+        <div class="model-diagram">
+            <div class="model-box model-base">
+            <div class="model-box-head">
+                <span class="model-name">Base model</span>
+                <span class="model-tag">shared · never modified</span>
+            </div>
+            <p class="model-desc">The shared foundation. Stable and unchanged — no user's queries ever affect this layer, including yours.</p>
+            </div>
+
+            <div class="model-connector">
+            <div class="model-connector-inner">
+                <i class="ti ti-arrow-down"></i>
+                forks silently on first use
+            </div>
+            </div>
+
+            <div class="model-box model-yours">
+            <div class="model-box-head">
+                <span class="model-name">Your model</span>
+                <span class="model-tag">yours · grows with you</span>
+            </div>
+            <p class="model-desc">Your personal layer. It grows as you use senor, picking up your style and domain over time. Entirely private — no one else can see or influence it.</p>
+            </div>
+        </div>
+        </div>
+
+    </div>
+    </div>
+
+    <!-- ── CODE INTEGRATION ────────────────────────────── -->
+    <hr class="divider">
+    <div class="section">
+    <div class="code-wrap">
+        <div>
+        <p class="sec-eye">quick start</p>
+        <h2 class="sec-title">One import.<br>Any stack.</h2>
+        <p class="code-left-desc">Official SDKs for JavaScript and Python. Or hit the REST endpoint directly — same interface, same results, wherever you work.</p>
+        <a href="docs.html" class="link-docs">View full API docs →</a>
+        </div>
+        <div>
+        <div class="code-block">
+            <div class="code-tabs">
+            <span class="code-tab on">TypeScript</span>
+            <span class="code-tab">Python</span>
+            <span class="code-tab">cURL</span>
+            </div>
+            <div class="code-body">
+                <span class="cl"><span class="ck">import</span> <span class="cpunc">{</span> Senor <span class="cpunc">}</span> <span class="ck">from</span> <span class="cstr">'senor'</span></span>
+                <span class="cl gap"></span>
+                <span class="cl"><span class="ck">const</span> client <span class="cpunc">=</span> <span class="ck">new</span> <span class="cfn">Senor</span><span class="cpunc">({</span></span>
+                <span class="cl">  apiKey<span class="cpunc">:</span> process<span class="cpunc">.</span>env<span class="cpunc">.</span><span class="cprop">SENOR_API_KEY</span></span>
+                <span class="cl"><span class="cpunc">})</span></span>
+                <span class="cl gap"></span>
+                <span class="cl"><span class="ck">const</span> stream <span class="cpunc">=</span> <span class="ck">await</span> client<span class="cpunc">.</span><span class="cfn">ask</span><span class="cpunc">({</span></span>
+                <span class="cl">  prompt<span class="cpunc">:</span> <span class="cstr">"Explain insertion sort"</span><span class="cpunc">,</span></span>
+                <span class="cl">  stream<span class="cpunc">:</span> <span class="ck">true</span><span class="cpunc">,</span></span>
+                <span class="cl">  context<span class="cpunc">:</span> <span class="cnum">128_000</span></span>
+                <span class="cl"><span class="cpunc">})</span></span>
+                <span class="cl gap"></span>
+                <span class="cl"><span class="ck">for await</span> <span class="cpunc">(</span><span class="ck">const</span> chunk <span class="ck">of</span> stream<span class="cpunc">)</span> <span class="cpunc">{</span></span>
+                <span class="cl">  process<span class="cpunc">.</span>stdout<span class="cpunc">.</span><span class="cfn">write</span><span class="cpunc">(</span>chunk<span class="cpunc">.</span>text<span class="cpunc">)</span></span>
+                <span class="cl"><span class="cpunc">}</span></span>
+                <span class="cl gap"></span>
+                <span class="cl"><span class="ccom">// → For nearly-sorted data, insertion sort…</span></span>
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- ── USE CASES ───────────────────────────────────── -->
+    <hr class="divider">
+    <div class="section">
+    <p class="sec-eye">built for</p>
+    <h2 class="sec-title">What you can build.</h2>
+    <div class="cases-grid">
+        <div class="case">
+        <i class="ti ti-code case-icon"></i>
+        <p class="case-name">Code review</p>
+        <p class="case-desc">Feed it a diff or a full file. Get back specific, reasoned feedback on logic, edge cases, and style — not just linting output.</p>
+        <span class="case-tag">engineering</span>
+        </div>
+        <div class="case">
+        <i class="ti ti-book case-icon"></i>
+        <p class="case-name">Research & analysis</p>
+        <p class="case-desc">Drop in a paper, a dataset description, or a set of documents. Get a structured breakdown with citations retained and conflicts flagged.</p>
+        <span class="case-tag">research</span>
+        </div>
+        <div class="case">
+        <i class="ti ti-markdown case-icon"></i>
+        <p class="case-name">Documentation</p>
+        <p class="case-desc">Point it at a codebase or an API schema. It writes accurate docs that reflect the actual behavior — not what the function name implies.</p>
+        <span class="case-tag">developer tools</span>
+        </div>
+        <div class="case">
+        <i class="ti ti-chart-bar case-icon"></i>
+        <p class="case-name">Data queries</p>
+        <p class="case-desc">Describe what you want to find. senor writes the query, explains what it does, and tells you where it's making assumptions.</p>
+        <span class="case-tag">data</span>
+        </div>
+    </div>
+    </div>
+
+
+    <!-- ── CTA ────────────────────────────────────────── -->
+    <hr class="divider">
+    <div class="cta-wrap">
+    <h2 class="cta-title">Ready to build?</h2>
+    <p class="cta-sub">Start for free. No credit card required.</p>
+    <button class="btn-cta-lg">Try Senor for free →</button>
+    </div>
+
+    </main>
+
+    <!-- ── FOOTER ─────────────────────────────────────── -->
+    <footer>
+    <div class="footer-inner">
+        <span class="logo">senor<span class="logo-dot">.</span></span>
+        <div class="footer-links">
+        <a href="product.html">Product</a>
+        <a href="prices.html">Prices</a>
+        <a href="docs.html">Docs</a>
+        <a href="https://github.com/MuhammadTak">GitHub</a>
+        <a href="">Status</a>
+        </div>
+        <p class="footer-cr">© 2025 senor</p>
+    </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
